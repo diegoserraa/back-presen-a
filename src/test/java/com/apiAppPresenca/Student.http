@@ -1,0 +1,7 @@
+POST http://us-cdbr-east-05.cleardb.net/student/create
+Content-Type: application/json
+
+{
+  "nome": "NameTestOne",
+  "email": "emailTestOne@gamil.com"
+}

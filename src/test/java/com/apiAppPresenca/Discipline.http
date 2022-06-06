@@ -1,0 +1,8 @@
+POST http://192.168.18.5:8080/discipline/create
+Content-Type: application/json
+
+{
+  "name": "DisciplineTestNumberTwo",
+  "descricao": "DisciplineDescriptionNumberTwo"
+}
+###
