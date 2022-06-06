@@ -14,7 +14,7 @@ public class StudentRepository {
     }
 
     public Student registerStudent(Student student) throws Exception{
-        String sql = "insert into student(name, email, photo) values (?, ?, ?)";
+        String sql = "insert into student(name, email, foto) values (?, ?, ?)";
         int insert = jdbcTemplate.update(sql,
                 student.getNome(),
                 student.getEmail(),

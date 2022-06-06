@@ -2,7 +2,7 @@ POST http://aw-presenca-api.herokuapp.com/student/create
 Content-Type: application/json
 
 {
-  "nome": "NameTestOne",
+  "name": "NameTestOne",
   "email": "emailTestOne@gamil.com"
 }
 
