@@ -4,10 +4,9 @@ package com.apiAppPresenca.controller;
 import com.apiAppPresenca.model.entity.Student;
 import com.apiAppPresenca.repository.StudentRepository;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/student")
@@ -18,6 +17,11 @@ public class StudentController {
 
     public StudentController(JdbcTemplate jdbcTemplate){
         studentRepository = new StudentRepository(jdbcTemplate);
+    }
+
+    @GetMapping
+    public List<Student> getAllStudents(){
+        return studentRepository.getStudents();
     }
 
     @PostMapping("/create")

@@ -4,9 +4,26 @@ import java.sql.Blob;
 
 public class Student {
 
+    Integer id;
     String name;
     String email;
-    Blob foto;
+    String foto;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getNome() {
         return name;
@@ -24,11 +41,11 @@ public class Student {
         this.email = email;
     }
 
-    public Blob getFoto() {
+    public String getFoto() {
         return foto;
     }
 
-    public void setFoto(Blob foto) {
+    public void setFoto(String foto) {
         this.foto = foto;
     }
 }

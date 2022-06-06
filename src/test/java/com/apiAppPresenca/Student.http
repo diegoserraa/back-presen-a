@@ -1,7 +1,12 @@
-POST http://us-cdbr-east-05.cleardb.net/student/create
+POST http://aw-presenca-api.herokuapp.com/student/create
 Content-Type: application/json
 
 {
   "nome": "NameTestOne",
   "email": "emailTestOne@gamil.com"
 }
+
+###
+
+GET https://aw-presenca-api.herokuapp.com/student
+Content-Type: application/json
