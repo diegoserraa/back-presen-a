@@ -3,6 +3,6 @@ Content-Type: application/json
 
 {
   "id_student": 4,
-  "id_discipline": 1
+  "id_discipline": 4
 }
 ###

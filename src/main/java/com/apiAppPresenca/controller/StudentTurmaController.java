@@ -1,7 +1,7 @@
 package com.apiAppPresenca.controller;
 
 
-import com.apiAppPresenca.model.entity.StudentTurma;
+import com.apiAppPresenca.model.entity.StudentDiscipline;
 import com.apiAppPresenca.repository.StudentTurmaRepository;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,8 +20,8 @@ public class StudentTurmaController {
     }
 
     @PostMapping("/add")
-    public StudentTurma insert(@RequestBody StudentTurma studentTurma) throws Exception{
-        return StudentTurmaRepository.registerStudentTurma(studentTurma);
+    public StudentDiscipline insert(@RequestBody StudentDiscipline studentDiscipline) throws Exception{
+        return StudentTurmaRepository.registerStudentTurma(studentDiscipline);
     }
 
 }

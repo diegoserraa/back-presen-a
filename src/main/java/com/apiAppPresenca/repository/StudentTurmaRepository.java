@@ -1,6 +1,6 @@
 package com.apiAppPresenca.repository;
 
-import com.apiAppPresenca.model.entity.StudentTurma;
+import com.apiAppPresenca.model.entity.StudentDiscipline;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class StudentTurmaRepository {
@@ -11,13 +11,13 @@ public class StudentTurmaRepository {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    public StudentTurma registerStudentTurma(StudentTurma studentTurma) throws Exception{
+    public StudentDiscipline registerStudentTurma(StudentDiscipline studentDiscipline) throws Exception{
         String sql = "insert into studentDiscipline(id_student, id_discipline) values (?, ?)";
         int insert = jdbcTemplate.update(sql,
-                studentTurma.getId_aluno(),
-                studentTurma.getId_turma());
+                studentDiscipline.getId_aluno(),
+                studentDiscipline.getId_discipline());
         if (insert == 1){
-            return studentTurma;
+            return studentDiscipline;
         }
         throw new Exception("O aluno(a) não foi inserido(a) corretamente");
     }
