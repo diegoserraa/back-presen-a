@@ -1,7 +1,10 @@
 package com.apiAppPresenca.repository;
 
 import com.apiAppPresenca.model.entity.Discipline;
+import com.apiAppPresenca.model.entity.Student;
 import org.springframework.jdbc.core.JdbcTemplate;
+
+import java.util.List;
 
 public class DisciplineRepository {
 
@@ -20,6 +23,10 @@ public class DisciplineRepository {
             return discipline;
         }
         throw new Exception("A disciplina não foi inserida corretamente");
+    }
+
+    public List<Discipline> getDisciplines(){
+        return jdbcTemplate.query("select * from discipline", new DisciplineMapper());
     }
 
 }
