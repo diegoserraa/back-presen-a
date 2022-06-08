@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/studentTurma")
+@RequestMapping("/group")
 public class StudentTurmaController {
 
     private StudentTurmaRepository StudentTurmaRepository;
@@ -19,7 +19,7 @@ public class StudentTurmaController {
         StudentTurmaRepository = new StudentTurmaRepository(jdbcTemplate);
     }
 
-    @PostMapping("/create")
+    @PostMapping("/add")
     public StudentTurma insert(@RequestBody StudentTurma studentTurma) throws Exception{
         return StudentTurmaRepository.registerStudentTurma(studentTurma);
     }

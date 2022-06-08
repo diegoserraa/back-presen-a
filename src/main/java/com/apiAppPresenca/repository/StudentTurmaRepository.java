@@ -12,7 +12,7 @@ public class StudentTurmaRepository {
     }
 
     public StudentTurma registerStudentTurma(StudentTurma studentTurma) throws Exception{
-        String sql = "insert into studentTurma(id_aluno, id_turma) values (?, ?)";
+        String sql = "insert into studentDiscipline(id_student, id_discipline) values (?, ?)";
         int insert = jdbcTemplate.update(sql,
                 studentTurma.getId_aluno(),
                 studentTurma.getId_turma());

@@ -1,8 +1,8 @@
-POST http://192.168.18.5:8080/studentTurma/create
+POST http://192.168.18.5:8080/group/add
 Content-Type: application/json
 
 {
-  "id_aluno": 2,
-  "id_turma": 1
+  "id_student": 4,
+  "id_discipline": 1
 }
 ###

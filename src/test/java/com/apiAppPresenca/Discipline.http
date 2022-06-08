@@ -6,3 +6,6 @@ Content-Type: application/json
   "descricao": "DisciplineDescriptionNumberTwo"
 }
 ###
+
+GET http://aw-presenca-api.herokuapp.com/discipline
+Content-Type: application/json
