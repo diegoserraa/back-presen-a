@@ -1,0 +1,19 @@
+POST http://192.168.18.5:8080/teacher/create
+Content-Type: application/json
+
+{
+  "nome": "TestTeacherNumberOne",
+  "username": "TestUsername",
+  "password": "TestPassword"
+}
+
+###
+
+POST http://192.168.18.5:8080/teacher/update/4
+Content-Type: application/json
+
+{
+  "nome": "TestTeacherNumberOne",
+  "username": "TestUserTwo",
+  "password": "TestPass"
+}
