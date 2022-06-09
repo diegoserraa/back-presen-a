@@ -1,0 +1,20 @@
+POST http://192.168.18.5:8080/info/add
+Content-Type: application/json
+
+{
+
+  "id_student": 34,
+  "id_discipline": 14,
+  "status": "Ausente",
+  "data" : "2022-06-08"
+
+}
+###
+
+GET http://192.168.18.5:8080/info/presencas/34/14
+Content-Type: application/json
+
+###
+
+GET http://192.168.18.5:8080/info/ausencias/34/14
+Content-Type: application/json

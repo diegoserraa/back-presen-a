@@ -3,6 +3,8 @@ package com.apiAppPresenca.repository;
 import com.apiAppPresenca.model.entity.StudentDiscipline;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import java.util.List;
+
 public class StudentTurmaRepository {
 
     private JdbcTemplate jdbcTemplate;
@@ -20,6 +22,10 @@ public class StudentTurmaRepository {
             return studentDiscipline;
         }
         throw new Exception("O aluno(a) não foi inserido(a) corretamente");
+    }
+
+    public List<StudentDiscipline> getAllStudentsDisciplineByIdDiscipline(Integer id){
+        return jdbcTemplate.query("select * from studentDiscipline where id_discipline = ?", new Object[]{id}, new StudentTurmaMapper());
     }
 
 }

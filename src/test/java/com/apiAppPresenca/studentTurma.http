@@ -2,7 +2,10 @@ POST http://192.168.18.5:8080/group/add
 Content-Type: application/json
 
 {
-  "id_student": 4,
+  "id_aluno": 14,
   "id_discipline": 4
 }
 ###
+
+GET http://192.168.18.5:8080/group/students/4
+Content-Type: application/json

@@ -2,8 +2,8 @@ POST http://aw-presenca-api.herokuapp.com/discipline/create
 Content-Type: application/json
 
 {
-  "name": "DisciplineTestNumberTwo",
-  "descricao": "DisciplineDescriptionNumberTwo"
+  "name": "DisciplineTestNumberOn2",
+  "descricao": "DisciplineDescriptionNumberOne"
 }
 ###
 
